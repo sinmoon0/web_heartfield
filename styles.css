@@ -1546,10 +1546,43 @@ body {
 @media (max-width: 768px) and (min-width: 481px) {
     .feature-cards {
         grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    
+    .feature-card {
+        padding: 1.5rem 1rem 1rem;
+    }
+    
+    .feature-card h3 {
+        font-size: 1.2rem;
+    }
+    
+    .feature-card p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+    
+    .icon-circle {
+        max-width: 65px;
+        width: 65px;
+        height: 65px;
+    }
+    
+    .feature-icon-img {
+        width: 32px;
+        height: 32px;
     }
 }
 
 @media (max-width: 768px) {
+    .nav-container {
+        padding: 1rem 1.5rem;
+    }
+    
+    .logo-img {
+        max-width: 150px;
+    }
+    
     .nav-toggle {
         display: flex;
     }
@@ -1561,12 +1594,17 @@ body {
         right: 0;
         background: white;
         flex-direction: column;
-        padding: 2rem;
+        padding: 1.5rem;
         box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
         transform: translateY(-100%);
         opacity: 0;
         visibility: hidden;
         transition: all 0.3s ease;
+    }
+    
+    .nav-menu a {
+        font-size: 14px;
+        padding: 0.5rem 0;
     }
     
     .nav-menu.active {
@@ -1593,6 +1631,17 @@ body {
         gap: 0.8rem;
     }
     
+    .hero-btn {
+        min-width: 160px;
+        padding: 0.7rem 1.2rem;
+        font-size: 0.9rem;
+    }
+    
+    .btn-icon {
+        width: 18px;
+        height: 18px;
+    }
+    
     .section-title-image {
         max-width: 300px;
     }
@@ -1602,11 +1651,81 @@ body {
     }
     
     .section-title {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
+        line-height: 1.2;
+    }
+    
+    .your-turn-section {
+        padding: 4rem 0 2rem;
+    }
+    
+    .gallery-section {
+        padding: 3rem 0 6rem;
+    }
+    
+    .video-section {
+        padding: 4rem 0;
+    }
+    
+    .shopping-section {
+        padding: 4rem 0;
+    }
+    
+    .sns-section {
+        padding: 2rem 0 6rem;
+    }
+    
+    .app-steps-section {
+        padding: 4rem 0;
+    }
+    
+    .social-media-section {
+        padding: 4rem 0;
+    }
+    
+    .brand-partnership-section {
+        padding: 4rem 0 0 0;
+    }
+    
+    .faq-section {
+        padding: 4rem 0;
+    }
+    
+    .final-cta-section {
+        padding: 6rem 0;
+    }
+    
+    .container {
+        padding: 0 1.5rem;
     }
     
     .feature-cards {
         grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .feature-card {
+        padding: 1.5rem 1.2rem 1rem;
+    }
+    
+    .feature-card h3 {
+        font-size: 1.3rem;
+    }
+    
+    .feature-card p {
+        font-size: 0.95rem;
+        line-height: 1.4;
+    }
+    
+    .icon-circle {
+        max-width: 70px;
+        width: 70px;
+        height: 70px;
+    }
+    
+    .feature-icon-img {
+        width: 35px;
+        height: 35px;
     }
     
     .gallery-item {
@@ -1726,6 +1845,23 @@ body {
 }
 
 @media (max-width: 480px) {
+    .nav-container {
+        padding: 0.8rem 1rem;
+    }
+    
+    .logo-img {
+        max-width: 120px;
+    }
+    
+    .nav-menu {
+        padding: 1rem;
+    }
+    
+    .nav-menu a {
+        font-size: 13px;
+        padding: 0.4rem 0;
+    }
+    
     .hero-title-logo {
         max-width: 250px;
     }
@@ -1743,7 +1879,63 @@ body {
     }
     
     .section-title {
-        font-size: 2rem;
+        font-size: 1.8rem;
+        line-height: 1.2;
+    }
+    
+    .your-turn-section {
+        padding: 3rem 0 1.5rem;
+    }
+    
+    .gallery-section {
+        padding: 2rem 0 4rem;
+    }
+    
+    .video-section {
+        padding: 3rem 0;
+    }
+    
+    .shopping-section {
+        padding: 3rem 0;
+    }
+    
+    .sns-section {
+        padding: 1.5rem 0 4rem;
+    }
+    
+    .app-steps-section {
+        padding: 3rem 0;
+    }
+    
+    .social-media-section {
+        padding: 3rem 0;
+    }
+    
+    .brand-partnership-section {
+        padding: 3rem 0 0 0;
+    }
+    
+    .faq-section {
+        padding: 3rem 0;
+    }
+    
+    .final-cta-section {
+        padding: 4rem 0;
+    }
+    
+    .container {
+        padding: 0 1rem;
+    }
+    
+    .hero-btn {
+        min-width: 140px;
+        padding: 0.6rem 1rem;
+        font-size: 0.85rem;
+    }
+    
+    .btn-icon {
+        width: 16px;
+        height: 16px;
     }
     
     .gallery-item {
@@ -1772,6 +1964,30 @@ body {
     
     .sns-text h2 {
         font-size: 2.2rem;
+    }
+    
+    .feature-card {
+        padding: 1.5rem 1rem 1rem;
+    }
+    
+    .feature-card h3 {
+        font-size: 1.2rem;
+    }
+    
+    .feature-card p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+    
+    .icon-circle {
+        max-width: 60px;
+        width: 60px;
+        height: 60px;
+    }
+    
+    .feature-icon-img {
+        width: 30px;
+        height: 30px;
     }
     
     .steps-grid {
