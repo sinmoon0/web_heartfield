@@ -1504,6 +1504,51 @@ body {
 }
 
 /* Responsive Design */
+/* 중간 해상도에서 카드 크기 조정하여 4개 한 줄 유지 */
+@media (max-width: 1400px) and (min-width: 1025px) {
+    .feature-cards {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr))
+    }
+    .feature-card {
+        padding: 1.5rem 1.5rem 1rem;
+    }
+    
+    .feature-card h3 {
+        font-size: 1.3rem;
+    }
+    
+    .feature-card p {
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+    
+    .icon-circle {
+        max-width: 80px;
+        width: 80px;
+        height: 80px;
+        justify-content: right;
+    }
+    
+    .feature-icon-img {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+/* 중간 해상도에서 feature-cards 2개씩 배치 */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .feature-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* 태블릿 해상도에서도 2개씩 배치 */
+@media (max-width: 768px) and (min-width: 481px) {
+    .feature-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media (max-width: 768px) {
     .nav-toggle {
         display: flex;
