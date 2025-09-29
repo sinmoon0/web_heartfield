@@ -414,7 +414,7 @@ body {
 }
 
 .gallery-section .section-title {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     line-height: 1.3;
     margin-bottom: 1rem;
 }
@@ -584,8 +584,9 @@ body {
     margin: 0;
 }
 
-/* Gradient Masks for Fade Effect */
-.clan-gradient-left {
+/* Gradient Masks for Fade Effect using pseudo-elements */
+.clan-carousel::before {
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -596,7 +597,8 @@ body {
     pointer-events: none;
 }
 
-.clan-gradient-right {
+.clan-carousel::after {
+    content: '';
     position: absolute;
     top: 0;
     right: 0;
@@ -694,10 +696,11 @@ body {
 }
 
 .shopping-text h2 {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     font-weight: 600;
     margin-bottom: 2rem;
     line-height: 1.2;
+    white-space: break-spaces;
 }
 
 .shopping-subtitle {
@@ -772,7 +775,7 @@ body {
 }
 
 .sns-text h2 {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     font-weight: 600;
     margin-bottom: 2rem;
     line-height: 1.2;
@@ -1569,16 +1572,42 @@ body {
     }
     
     .feature-icon-img {
-        width: 32px;
-        height: 32px;
+        width: 60px;
+        height: 60px;
+    }
+}
+@media (max-width: 1400px) {
+    .shopping-content {
+        gap: 2rem;
+    }
+    .tag-row {
+        gap: 0.5rem;
+    }
+    .sport-tag {
+        padding: 0.5rem 1rem;
     }
 }
 
+@media (max-width: 1024px) and (min-width: 769px) {
+    .tag-row {
+        gap: 0.4rem;
+    }
+    .sport-tag {
+        padding: 0.5rem 0.8rem;
+    }
+}
+
+
 @media (max-width: 768px) {
+    .shopping-content {
+        align-items: center;
+    }
     .nav-container {
         padding: 1rem 1.5rem;
     }
-    
+    .shopping-text {
+        text-align: center;
+    }
     .logo-img {
         max-width: 150px;
     }
@@ -1586,7 +1615,6 @@ body {
     .nav-toggle {
         display: flex;
     }
-    
     .nav-menu {
         position: absolute;
         top: 100%;
@@ -1632,9 +1660,9 @@ body {
     }
     
     .hero-btn {
-        min-width: 160px;
+        min-width: 200px;
         padding: 0.7rem 1.2rem;
-        font-size: 0.9rem;
+        font-size: 1.1rem;
     }
     
     .btn-icon {
@@ -1699,9 +1727,24 @@ body {
         padding: 0 1.5rem;
     }
     
+    .shopping-text .section-toptitle {
+        font-size: 1.8rem;
+        margin-bottom: 1.2rem;
+    }
+    
     .sns-text .section-toptitle {
         font-size: 1.8rem;
         margin-bottom: 1.2rem;
+    }
+    
+    .gallery-section .section-title {
+        font-size: 2.2rem;
+        margin-bottom: 1.8rem;
+    }
+    
+    .shopping-text h2 {
+        font-size: 2.2rem;
+        margin-bottom: 1.8rem;
     }
     
     .sns-text h2 {
@@ -1709,9 +1752,20 @@ body {
         margin-bottom: 1.8rem;
     }
     
+    .section-subtitle {
+        font-size: 1.1rem;
+        margin-bottom: 3rem;
+    }
+    
+    .shopping-subtitle {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+    
     .sns-subtitle {
         font-size: 1.05rem;
         line-height: 1.5;
+        white-space: normal;
     }
     
     .section-toptitle {
@@ -1743,8 +1797,8 @@ body {
     }
     
     .feature-icon-img {
-        width: 35px;
-        height: 35px;
+        width: 60px;
+        height: 60px;
     }
     
     .gallery-item {
@@ -1754,8 +1808,8 @@ body {
     }
     
     .clan-card {
-        flex: 0 0 240px;
-        width: 240px;
+        flex: 0 0 180px;
+        width: 180px;
     }
     
     .clan-bottom-section {
@@ -1802,7 +1856,7 @@ body {
     
     .shopping-tags {
         align-items: center;
-    } ㅍ
+    }
     
     .tag-row {
         justify-content: center;
@@ -1887,7 +1941,7 @@ body {
     }
     
     .hero-title-logo {
-        max-width: 250px;
+        max-width: 290px;
     }
     
     .hero-subtitle {
@@ -1952,9 +2006,9 @@ body {
     }
     
     .hero-btn {
-        min-width: 140px;
-        padding: 0.6rem 1rem;
-        font-size: 0.85rem;
+        min-width: 180px;
+        padding: 0.7rem 1.2rem;
+        font-size: 1rem;
     }
     
     .btn-icon {
@@ -1973,17 +2027,36 @@ body {
     }
     
     .clan-card {
-        flex: 0 0 200px;
-        width: 200px;
+        flex: 0 0 170px;
+        width: 170px;
     }
     
     .clan-track {
-        gap: 1.5rem;
+        gap: 1rem;
+    }
+    .clan-location {
+        font-size: 0.8rem;
+    }
+    .clan-name {
+        font-size: 1rem;
+    }
+    .clan-description {
+        font-size: 0.85rem;
     }
     
+    .clan-carousel::before,
+    .clan-carousel::after {
+        width: 100px;
+    }
+
     .phone-mockup {
         width: 250px;
         height: 500px;
+    }
+    
+    .shopping-text .section-toptitle {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
     }
     
     .sns-text .section-toptitle {
@@ -1991,18 +2064,44 @@ body {
         margin-bottom: 1rem;
     }
     
+    .gallery-section .section-title {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .shopping-text h2 {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+    }
+    
     .sns-text h2 {
         font-size: 1.8rem;
         margin-bottom: 1.5rem;
     }
     
+    .section-subtitle {
+        font-size: 1.1rem;
+        margin-bottom: 2.5rem;
+    }
+    
+    .shopping-subtitle {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+    
     .sns-subtitle {
         font-size: 1rem;
         line-height: 1.5;
+        white-space: normal;
     }
     
     .section-toptitle {
         font-size: 1.5rem;
+    }
+    
+    .clan-carousel .clan-gradient-left,
+    .clan-carousel .clan-gradient-right {
+        width: 80px;
     }
     
     .sns-content {
@@ -2018,11 +2117,11 @@ body {
     }
     
     .feature-card h3 {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
     
     .feature-card p {
-        font-size: 0.9rem;
+        font-size: 1.1rem;
         line-height: 1.4;
     }
     
@@ -2033,8 +2132,8 @@ body {
     }
     
     .feature-icon-img {
-        width: 30px;
-        height: 30px;
+        width: 60px;
+        height: 60px;
     }
     
     .steps-grid {
@@ -2070,6 +2169,10 @@ body {
     
     .brand-track {
         gap: 2rem;
+    }
+
+    .m_p_1r {
+        padding: 0 1rem;
     }
 }
 
@@ -2162,6 +2265,7 @@ body {
 .animate-fade-right.animate-in {
     opacity: 1;
     transform: translateX(0);
+    min-width:270px;
 }
 
 .animate-fade-scale.animate-in {
