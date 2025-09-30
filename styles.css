@@ -318,6 +318,7 @@ body {
     font-weight: 600;
     margin-bottom: 1rem;
     color: #333;
+    white-space: break-spaces;
 }
 
 .section-title-image {
@@ -342,6 +343,7 @@ body {
     color: #666;
     margin:0 auto;
     margin-bottom: 4rem;
+    font-weight: 300;
 }
 
 .feature-cards {
@@ -366,7 +368,7 @@ body {
 }
 
 .feature-icon {
-    margin-top: 2rem;
+    margin-top: 0.8rem;
     float: right;
 }
 
@@ -1618,6 +1620,22 @@ body {
         text-align: center;
     }
     
+    .sns-section {
+        padding: 4rem 0 0rem;
+        overflow: visible;
+        position: relative;
+    }
+    
+    .sns-content {
+        gap: 1rem;
+    }
+    
+    .phone-mockup {
+        position: relative;
+        margin-top: 1rem;
+        margin-bottom: -100px;
+    }
+    
     .tag-row {
         gap: 0.4rem;
     }
@@ -1726,7 +1744,7 @@ body {
     }
     
     .your-turn-section {
-        padding: 4rem 0 2rem;
+        padding: 6rem 0 2.5rem;
     }
     
     .gallery-section {
@@ -1742,11 +1760,21 @@ body {
     }
     
     .sns-section {
-        padding: 2rem 0 6rem;
+        padding: 2rem 0 0rem;
+        overflow: visible;
+    }
+    
+    .sns-content {
+        gap: 1rem;
+    }
+    
+    .phone-mockup {
+        margin-top: 1rem;
+        margin-bottom: -80px;
     }
     
     .app-steps-section {
-        padding: 4rem 0;
+        padding: 8rem 0 4rem;
     }
     
     .step-number {
@@ -1817,9 +1845,8 @@ body {
     }
     
     .sns-subtitle {
-        font-size: 1.05rem;
+        font-size: 1rem;
         line-height: 1.5;
-        white-space: normal;
     }
     
     .section-toptitle {
@@ -1875,7 +1902,8 @@ body {
     .rewards-section {
         flex-direction: column;
         text-align: center;
-        gap: 1.5rem;
+        padding: 1.5rem;
+        gap: 1.2rem;
     }
     
     .section-content {
@@ -2001,7 +2029,7 @@ body {
     }
     
     .your-turn-section {
-        padding: 3rem 0 1.5rem;
+        padding: 6rem 0 2.5rem;
     }
     
     .gallery-section {
@@ -2017,11 +2045,21 @@ body {
     }
     
     .sns-section {
-        padding: 1.5rem 0 4rem;
+        padding: 1.5rem 0 0rem;
+        overflow: visible;
+    }
+    
+    .sns-content {
+        gap: 1rem;
+    }
+    
+    .phone-mockup {
+        margin-top: 1rem;
+        margin-bottom: -50px;
     }
     
     .app-steps-section {
-        padding: 3rem 0;
+        padding: 6rem 0 3rem;
     }
     
     .step-number {
@@ -2100,6 +2138,19 @@ body {
         width: 100px;
     }
 
+    .qr-section h3, .rewards-section h3 {
+        margin-bottom: 0.5rem;
+    }
+
+    .qr-section,
+    .rewards-section {
+        padding: 0.8rem 1rem 1rem;
+        gap: 0.8rem;
+    }
+    .qr-section p, .rewards-section p {
+        text-align: left;
+    }
+
     .phone-mockup {
         width: 250px;
         height: 500px;
@@ -2131,7 +2182,7 @@ body {
     }
     
     .section-subtitle {
-        font-size: 1.1rem;
+        font-size: 1rem;
         margin-bottom: 2.5rem;
     }
     
@@ -2141,7 +2192,7 @@ body {
     }
     
     .sns-subtitle {
-        font-size: 1rem;
+        font-size: 0.95rem;
         line-height: 1.5;
         white-space: normal;
     }
