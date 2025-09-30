@@ -2074,6 +2074,10 @@ body {
         font-size: 0.9rem;
     }
     
+    .step-phone img {
+        max-width:200px;
+    }
+    
     .social-media-section {
         padding: 3rem 0;
     }
@@ -2149,6 +2153,7 @@ body {
     }
     .qr-section p, .rewards-section p {
         text-align: left;
+        padding: 0 0.3rem;
     }
 
     .phone-mockup {
@@ -2243,13 +2248,32 @@ body {
     
     .steps-grid {
         grid-template-columns: 1fr;
-        gap: 3rem;
+        gap: 0rem;
+    }
+    
+    .step-item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5rem;
+        text-align: left;
     }
     
     .step-phone {
-       padding:0 3rem;
-      /*  width: 180px;
-        height: 360px; */
+        flex: 0 0 auto;
+        width: 150px;
+        margin-bottom: 0;
+    }
+    
+    .step-phone img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .step-content {
+        flex: 1;
+        text-align: left;
+        padding: 0 0.5rem;
     }
     
     .step-item::after {

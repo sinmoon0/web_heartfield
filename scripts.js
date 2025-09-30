@@ -556,4 +556,36 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Initialize post slider
     initPostSlider();
+    
+    // Change step images for mobile
+    changeStepImagesForMobile();
 });
+
+// Change step images based on screen size
+function changeStepImagesForMobile() {
+    const stepImages = document.querySelectorAll('.step-phone img');
+    
+    function updateImages() {
+        const isMobile = window.innerWidth <= 480;
+        
+        stepImages.forEach((img, index) => {
+            const stepNumber = String(index + 1).padStart(2, '0');
+            const prefix = isMobile ? 'm_step_' : 'step_';
+            const newSrc = `assets/images/steps/${prefix}${stepNumber}.png`;
+            
+            if (img.src !== newSrc) {
+                img.src = newSrc;
+            }
+        });
+    }
+    
+    // Initial update
+    updateImages();
+    
+    // Update on window resize
+    let resizeTimer;
+    window.addEventListener('resize', function() {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(updateImages, 250);
+    });
+}
