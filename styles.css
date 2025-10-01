@@ -1716,6 +1716,10 @@ body {
         max-width: 450px;
     }
     
+    .hero-content {
+        top: -0.3rem;
+    }
+    
     .hero-subtitle {
         font-size: 1.5rem;
         margin-bottom: 2.75rem;
@@ -2135,7 +2139,7 @@ body {
     }
     
     .social-media-section {
-        padding: 3rem 0;
+        padding: 5rem 0;
     }
     
     .faq-question {
@@ -2172,15 +2176,15 @@ body {
     }
     
     .brand-partnership-section {
-        padding: 3rem 0 0 0;
+        padding: 5rem 0 0 0;
     }
     
     .faq-section {
-        padding: 3rem 0;
+        padding: 5rem 0;
     }
     
     .final-cta-section {
-        padding: 4rem 0;
+        padding: 5rem 0;
     }
     
     .container {
