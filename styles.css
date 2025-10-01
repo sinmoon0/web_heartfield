@@ -2054,6 +2054,11 @@ body {
         padding: 0.8rem 1rem;
     }
     
+    .hamburger {
+        width:22px;
+        margin:2px 0;
+    }
+    
     .logo-img {
         max-width: 120px;
     }
