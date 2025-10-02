@@ -2106,7 +2106,7 @@ body {
         padding: 5rem 0 4rem;
     }
     
-    .shopping-text, .sns-text br  {
+    .shopping-text br, .sns-text br  {
         display: none;
     }
 
