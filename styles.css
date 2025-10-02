@@ -248,7 +248,7 @@ body {
 .hero-subtitle {
     font-size: 1.6rem;
     font-weight: 400;
-    margin-bottom: 1.6rem;
+    margin-bottom: 2.5rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
@@ -270,9 +270,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 180px;
+    min-width: 200px;
     gap: 0.5rem;
-    padding: 0.8rem 1.5rem;
+    padding: 1rem 2.5rem;
     background: rgba(0, 0, 0, 0.7);
     color: white;
     text-decoration: none;
